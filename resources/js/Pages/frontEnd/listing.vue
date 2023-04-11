@@ -39,12 +39,12 @@
       Search
     </button>
   </div>
-  <div
-    class="grid gap-6 lg:grid-cols-3 lg:mx-8 xl:mx-16 py-12 px-4 sm:px-20"
-    v-for="(property, index) in props.properties"
-    :key="index"
-  >
-    <div class="max-w-xl mx-auto">
+  <div class="grid gap-6 lg:grid-cols-3 lg:mx-8 xl:mx-16 py-12 px-4 sm:px-20">
+    <div
+      class="max-w-xl mx-auto"
+      v-for="(property, index) in props.properties"
+      :key="index"
+    >
       <PropertyCard
         image="/images/listing.jpg"
         :id="property.id"

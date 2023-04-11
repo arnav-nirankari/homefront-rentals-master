@@ -36,7 +36,7 @@ Route::get('/contact', function () {
     return Inertia::render('frontEnd/contact');
 })->name('contact');
 
-Route::get('/listing-view/{id}', function ($id) {
+Route::get('/listing-view/{id?}', function ($id) {
     $property = Property::find($id);
     return Inertia::render('frontEnd/listing-view', ['property' => $property]);
 })->name('listing-view');
